@@ -39,7 +39,7 @@ function App(){
       <Button>HELLO</Button>
       <Copy />
 
-      <Move />
+      {/* <Move /> */}
     </>
   )
 }
