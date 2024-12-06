@@ -1,29 +1,48 @@
-import { useState } from 'react'
-import Example from './components/Example';
+// import { useState } from 'react';
+// import Example from './components/Example';
 // import ComponentOne from './components/ComponentOne';
 // import ComponentTwo from './components/ComponentTwo';
-
+import Counter from './components/Counter'
+import TodoList from './components/TodoList'
+import Profile from './components/Profile'
+import ShoppingList from './components/ShoppingList'
 
 function App() {
-  const [randomNumber, setRandomNumber] = useState(()=> 
-    Math.floor(Math.random() * 100)
-  );
-
-  const generateNewRandomNumber = () =>{
-
-    const newRandom = Math.floor(Math.random()*1000);
-    setRandomNumber(newRandom)
-  }
-
   return (
     <>
-      <h2>Random Number: {randomNumber}</h2>
-      <button onClick = {generateNewRandomNumber}>Example</button>
+      <Counter />
+      <p>Hello</p>
+      <TodoList />
+      <hr />
+      <Profile/>
 
-      <Example />
+      <ShoppingList/>
     </>
+
   )
 }
+
+
+// function App() {
+//   const [randomNumber, setRandomNumber] = useState(()=> 
+//     Math.floor(Math.random() * 100)
+//   );
+
+//   const generateNewRandomNumber = () =>{
+
+//     const newRandom = Math.floor(Math.random()*1000);
+//     setRandomNumber(newRandom)
+//   }
+
+//   return (
+//     <>
+//       <h2>Random Number: {randomNumber}</h2>
+//       <button onClick = {generateNewRandomNumber}>Example</button>
+
+//       <Example />
+//     </>
+//   )
+// }
 
 
 
